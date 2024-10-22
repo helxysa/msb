@@ -25,19 +25,19 @@ export default function Nav() {
           </button>
         </div>
         <ul className="hidden lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
-          <li><Link href="/vagas" className="text-sm text-gray-400 hover:text-gray-500">Vagas</Link></li>
+          <li><Link href="/" className="text-sm text-gray-400 hover:text-gray-500">Vagas</Link></li>
           <li className="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
             </svg>
           </li>
-          <li><Link href="/precos" className="text-sm text-gray-400 hover:text-gray-500">Preços</Link></li>
+          <li><Link href="/" className="text-sm text-gray-400 hover:text-gray-500">Preços</Link></li>
           <li className="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
             </svg>
           </li>
-          <li><Link href="/sobre" className="text-sm text-gray-400 hover:text-gray-500">Sobre Nós</Link></li>
+          <li><Link href="/" className="text-sm text-gray-400 hover:text-gray-500">Sobre Nós</Link></li>
           <li className="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -66,16 +66,16 @@ export default function Nav() {
             <div>
               <ul>
                 <li className="mb-1">
-                  <Link href="/vagas" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Vagas</Link>
+                  <Link href="/" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Vagas</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/precos" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Preços</Link>
+                  <Link href="/" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Preços</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/sobre" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Sobre Nós</Link>
+                  <Link href="/" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Sobre Nós</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/admin" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Área de Administração</Link>
+                  <Link href="/pages/admin" className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded">Área de Administração</Link>
                 </li>
               </ul>
             </div>
