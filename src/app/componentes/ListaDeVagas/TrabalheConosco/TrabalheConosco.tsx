@@ -3,8 +3,14 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 interface Vaga {
-  id: number;
+  id: string;
   titulo: string;
+  localizacao: string;
+  descricao: string;
+  responsabilidades: string[];
+  requisitos: string[];
+  beneficios: string[];
+  remuneracao: string;
   area: string;
 }
 

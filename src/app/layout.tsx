@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav from "@/app/pages/componentes/Nav/Nav";
-
+import Nav from "@/app/componentes/Nav/Nav";
 
 export const metadata: Metadata = {
   title: "MSB",
@@ -15,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className='bg-gray-50'
-      >
+      <body className="bg-gray-50">
         <Nav />
         {children}
       </body>

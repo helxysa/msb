@@ -1,5 +1,5 @@
 'use client'
-import ListaDeVagas from "../ListaDeVagas/ListaDeVagas"
+import ListaDeVagas from '../ListaDeVagas/ListaDeVagas'
 
 export default function HomePage() {
   return (

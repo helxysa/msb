@@ -45,7 +45,7 @@ export default function Nav() {
           </li>
         </ul>
         <div className="hidden lg:block">
-          <Link href="/admin" className="text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full transition duration-300">Área de Administração</Link>
+          <Link href="/pages/admin" className="text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full transition duration-300">Área de Administração</Link>
         </div>
       </div>
       
