@@ -17,28 +17,34 @@ interface Vaga {
 
 export default function ListaDeVagas() {
   const [vagas, setVagas] = useState<Vaga[]>([])
-  const [isLoading, setIsLoading] = useState(true)
-
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setIsLoading(true)
-
+    setLoading(true)
     fetch('/api/vagas')
       .then(response => response.json())
       .then(data => {
-        setVagas(data)
-        setIsLoading(false)
+        if (Array.isArray(data)) {
+          setVagas(data)
+        } else {
+          console.error('Dados recebidos não são um array:', data)
+          setVagas([])
+        }
       })
-      .catch(error => console.error('Erro ao buscar vagas:', error, setIsLoading(false)))
+      .catch(error => console.error('Erro ao buscar vagas:', error))
+      .finally(() => setLoading(false))
   }, [])
+
+  if (loading) {
+    return <Loading />
+  }
 
   return (
     <div>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <TrabalheConosco vagas={vagas} />
-      )}
+     
+          <TrabalheConosco vagas={vagas} />
+       
+       
     </div>
   )
 }

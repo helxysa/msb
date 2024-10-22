@@ -84,3 +84,4 @@ export async function DELETE(request: NextRequest) {
     return NextResponse.json({ error: 'Erro ao excluir vaga' }, { status: 500 });
   }
 }
+
